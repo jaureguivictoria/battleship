@@ -1,0 +1,41 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}BattleshipBundle:Board:showBoard1{% endblock %}
+
+{% block body %}
+<h1>Welcome to the Board:showBoard1 page</h1>
+
+<table>
+    {% for row in grid %}
+    <thead>
+        <tr>
+            {% for i in 0..10 %}
+                <td> {{ i }} </td>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        {% for column in row %}
+            <td>
+                {# Water #}
+                {% if column == 'W' %}
+                    <span style="width:5px;color:blue;"></span>
+                {# Ship #}
+                {% elseif column == 'S' %}
+                    <span style="width:5px;color:black;"></span>
+                {# Missed shot #}
+                {% elseif column == 'M' %}
+                    <span style="width:5px;color:white;"></span>
+                {# Shot #}
+                {% elseif column == 'X' %}
+                    <span style="width:5px;color:red;background:black;">X</span>
+                {% endif %}
+            </td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
