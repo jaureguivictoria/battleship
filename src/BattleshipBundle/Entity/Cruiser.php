@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Cruiser
  */
-class Cruiser
+class Cruiser extends Ship
 {
     public function __construct($pos_x, $pos_y, $horizontal){
         $this->size = 3;
