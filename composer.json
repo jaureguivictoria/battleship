@@ -1,5 +1,5 @@
 {
-    "name": "vicky/symfonyapp",
+    "name": "vicky/battleship",
     "license": "proprietary",
     "type": "project",
     "autoload": {

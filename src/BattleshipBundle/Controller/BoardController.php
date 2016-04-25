@@ -8,7 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class BoardController extends Controller
 {
     /**
-     * @Route("/games/{id}", name='showBoard')
+     * @Route("/games/{id}", name="showBoard")
      */
     public function showBoardAction($id){
         $game = $this->getDoctrine()

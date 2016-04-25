@@ -174,8 +174,8 @@ class Board
         $valid = false;
         $grid = $this->generateGrid();
 
-        if(isset( $grid[ $pos_x, $pos_y ] )){
-             if($grid[ $pos_x, $pos_y ] == 'W' || $grid[ $pos_x, $pos_y ] == 'S'){
+        if(isset( $grid[ $pos_x ][ $pos_y ] )){
+             if($grid[ $pos_x][ $pos_y ] == 'W' || $grid[ $pos_x][ $pos_y ] == 'S'){
                  $valid = true;
              }
         }
