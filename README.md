@@ -4,7 +4,7 @@ A Symfony project created on March 11, 2016, 2:05 am.
 
 ## Overview ##
 
-This repository holds a battleship game written in PHP Symfony. **It's not finished** but the overall logic and entities are there. The BattleshipBundle contains the views, controllers and entity repositories.
+This repository holds a [battleship game](https://en.wikipedia.org/wiki/Battleship_%28game%29) written in PHP Symfony. **It's not finished** but the overall logic and entities are there. The BattleshipBundle contains the views, controllers and entity repositories.
 
 ## The ships ##
 
